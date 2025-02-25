@@ -1,4 +1,4 @@
-from arithmetic_operations import perform_operation
+from fns_and_dsa.arithmetic_operations import perform_operation  # Ensure correct import
 
 def main():
     print("Arithmetic Operations")

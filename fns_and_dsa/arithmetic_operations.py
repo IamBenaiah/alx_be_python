@@ -1,8 +1,5 @@
-# arithmetic_operations.py
-
 def perform_operation(num1: float, num2: float, operation: str):
-    """Perform basic arithmetic operations based on the given operation."""
-    
+    """Performs the given arithmetic operation on two numbers."""
     match operation:
         case "add":
             return num1 + num2
@@ -12,7 +9,7 @@ def perform_operation(num1: float, num2: float, operation: str):
             return num1 * num2
         case "divide":
             if num2 == 0:
-                return "Error: Division by zero is not allowed."
+                return "Error: Cannot divide by zero"
             return num1 / num2
         case _:
-            return "Error: Invalid operation. Please choose add, subtract, multiply, or divide."
+            return "Error: Invalid operation"
